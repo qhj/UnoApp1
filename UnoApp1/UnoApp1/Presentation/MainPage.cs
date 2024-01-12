@@ -34,14 +34,13 @@ public partial class MainPage : Page
                             .Children
                             (
                                 new TextBox()
-                                    //.Text(b => b.Bind("Credentials.UserName").TwoWay())
-                                    .Text("测试文本")
+                                    .Text("test")
                                     .Height(60)
                                     .PlaceholderText("账号")
                                     .Style(Theme.TextBox.Styles.Filled),
                                 new PasswordBox()
                                     .PlaceholderText("密码")
-                                    .Password(b => b.Bind("Credentials.Password").TwoWay())
+                                    .Password("password")
                                     .Height(60)
                                     .Style(Theme.PasswordBox.Styles.Filled),
                                 new HyperlinkButton()
